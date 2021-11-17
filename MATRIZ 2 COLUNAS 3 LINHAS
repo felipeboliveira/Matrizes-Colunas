@@ -1,0 +1,23 @@
+#include <stdio.h>  // CODIGO CRIADO EM LINGUAGEM C
+#include <conio.h>
+int main()
+{
+    int matriz[2][3],i,j;  // DEFINIÇÃO COLUNAS E LINHAS
+    printf ("\nDigite valor para os elementos da matriz\n\n");
+    for ( i=0; i<2; i++ ) // VALOR DE COLUNA
+    for ( j=0; j<3; j++ ) // VALOR DE LINHAS
+    {
+        printf ("\nElemento[%d][%d] = ", i, j);
+        scanf ("%d", &matriz[i][j]);
+    }
+    printf("\n\n************** SAIDA DE DADOS ***************\n\n");
+    for ( i=0; i<2; i++ )
+    for ( j=0; j<3; j++ )
+    {
+        printf ("\nElemento[%d][%d] = %d\n", i, j, matriz[i][j]); 
+        // MOSTRARA OS DADOS DESCRITOS A CIMA!
+        
+    }
+    
+    getch();
+    return(0);
